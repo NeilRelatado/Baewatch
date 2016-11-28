@@ -22,12 +22,18 @@
  <b>Search:</b>
             <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox><asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
             <br />
-            <asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
-    <asp:Button runat="server" OnClick="SignOut" Text="Log out" />
+<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
 
-        <asp:Button ID="Friends" runat="server" Text="Friends" OnClick="Friends_Click" />
+  <asp:Button runat="server" OnClick="SignOut" Text="Log out" />
 
-        </asp:Panel>
+        <asp:Button ID="Friends" runat="server" Text="Friends" OnClick="Friends_Click" Width="84px" />
+
+        <asp:Button ID="btnYourProfile" runat="server" Text="Your Profile" OnClick="btnYourProfile_Click" />
+</asp:Panel>
+            
+  
+
+        
 
 </Content>
     

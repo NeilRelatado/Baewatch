@@ -27,6 +27,8 @@
 
         <asp:Button ID="Friends" runat="server" Text="Friends" OnClick="Friends_Click" />
 
+        <asp:Button ID="btnYourProfile" runat="server" Text="Your Profile" />
+
         </asp:Panel>
 
 </Content>

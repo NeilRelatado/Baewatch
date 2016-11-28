@@ -67,6 +67,15 @@ namespace SearchBarwithMasterPage {
         protected global::System.Web.UI.WebControls.Button Friends;
         
         /// <summary>
+        /// btnYourProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnYourProfile;
+        
+        /// <summary>
         /// Body control.
         /// </summary>
         /// <remarks>

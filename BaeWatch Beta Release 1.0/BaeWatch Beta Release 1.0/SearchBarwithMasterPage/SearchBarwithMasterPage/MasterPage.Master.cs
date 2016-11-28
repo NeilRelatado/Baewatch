@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using Microsoft.AspNet.Identity;
 
 namespace SearchBarwithMasterPage
 {
@@ -13,7 +18,7 @@ namespace SearchBarwithMasterPage
         public static string passingText;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         public Panel SearchPanel
@@ -67,6 +72,34 @@ namespace SearchBarwithMasterPage
         {
             
             Response.Redirect("~/FriendsListaspx.aspx");
+        }
+
+        protected void btnYourProfile_Click(object sender, EventArgs e)
+        {
+            string username = HttpContext.Current.User.Identity.GetUserName();
+            int ID=0;
+             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
+             using (SqlConnection con = new SqlConnection(cs))
+             {
+                 SqlCommand cmd = new SqlCommand("spGetProfileByName",con);
+                 cmd.CommandType = CommandType.StoredProcedure;
+                 SqlParameter paramUser = new SqlParameter()
+                 {
+                     ParameterName = "@Username",
+                     Value = username
+                 };
+                 cmd.Parameters.Add(paramUser);
+                 con.Open();
+                 SqlDataReader rdr = cmd.ExecuteReader();
+                 while(rdr.Read())
+                 {
+                     ID = Convert.ToInt32(rdr["ID"]);
+                 }
+                 string UserID = ID.ToString();
+                 con.Close();
+                  Response.Redirect("~/UserProfile.aspx?ID=" + UserID);
+
+             }
         }
 
     }
