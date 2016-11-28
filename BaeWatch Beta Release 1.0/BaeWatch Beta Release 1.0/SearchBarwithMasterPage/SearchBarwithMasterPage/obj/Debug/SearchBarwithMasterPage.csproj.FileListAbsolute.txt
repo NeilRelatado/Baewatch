@@ -1,0 +1,87 @@
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll.config
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.pdb
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Owin.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.xml
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.dll
+C:\Users\Neil\Documents\Visual Studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.pdb
+C:\Users\Neil\documents\visual studio 2013\Projects\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.csprojResolveAssemblyReference.cache
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll.config
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.pdb
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Owin.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.xml
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.csprojResolveAssemblyReference.cache
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.dll
+C:\Users\wests\Downloads\baewatch 3rd act\New folder (3)\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.pdb
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll.config
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\SearchBarwithMasterPage.pdb
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Owin.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\EntityFramework.SqlServer.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\bin\Newtonsoft.Json.xml
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.csprojResolveAssemblyReference.cache
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.dll
+C:\Users\Neil\Downloads\BaeWatch Beta Release 1.0\BaeWatch Beta Release 1.0\SearchBarwithMasterPage\SearchBarwithMasterPage\obj\Debug\SearchBarwithMasterPage.pdb
