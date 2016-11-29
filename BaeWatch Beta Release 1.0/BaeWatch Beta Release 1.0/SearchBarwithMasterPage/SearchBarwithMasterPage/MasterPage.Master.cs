@@ -52,7 +52,7 @@ namespace SearchBarwithMasterPage
         protected void btnSearch_Click(object sender, EventArgs e)
         {
            
-            Response.Redirect("~/SearchBar.aspx?"+txtSearch.Text);
+            Response.Redirect("~/SearchBar.aspx?"+txtSearch.Text); 
             
         }
 
@@ -100,6 +100,11 @@ namespace SearchBarwithMasterPage
                   Response.Redirect("~/UserProfile.aspx?ID=" + UserID);
 
              }
+        }
+
+        protected void btnSettings_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/AccountSettings.aspx");
         }
 
     }
