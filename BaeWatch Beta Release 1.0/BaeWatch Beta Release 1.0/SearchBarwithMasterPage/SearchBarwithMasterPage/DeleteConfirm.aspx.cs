@@ -71,6 +71,7 @@ namespace SearchBarwithMasterPage
 
                  
                  userManager.RemovePasswordAsync(GetID);
+                 authenticationManager.SignOut();
   
                  
                  Response.Redirect("~/StartScreen.aspx");

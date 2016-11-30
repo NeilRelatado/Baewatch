@@ -29,7 +29,7 @@ namespace SearchBarwithMasterPage
         
         }
 
-        protected void btnRegister_Click(object sender, EventArgs e)
+        protected void btnRegister_Click(object sender, EventArgs e) 
         {
             String Username = txtUserName.Text;
             String Description = txtDescription.Text;
