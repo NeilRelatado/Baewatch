@@ -69,6 +69,7 @@ namespace SearchBarwithMasterPage
             {
                 O = "Other";
             }
+
             if (ShortT.Checked)
             {
                 Type = "Short Term";

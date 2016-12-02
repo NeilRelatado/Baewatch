@@ -204,7 +204,7 @@ namespace SearchBarwithMasterPage
             string username = User.Identity.GetUserName();
             if (Strait.Checked)
             {
-                O = "Strait";
+                O = "Straight ";
             }
 
             if (Gay.Checked)
@@ -239,17 +239,17 @@ namespace SearchBarwithMasterPage
                 con.Close();
                 SqlCommand cmd2 = new SqlCommand("spUpdateOrein", con);
                 cmd2.CommandType = CommandType.StoredProcedure;
-                SqlParameter paramID = new SqlParameter() 
-                { 
-                ParameterName="ID",
-                Value=ID
+                SqlParameter paramID = new SqlParameter()
+                {
+                    ParameterName = "ID",
+                    Value = ID
                 };
                 cmd2.Parameters.Add(paramID);
-                SqlParameter paramO = new SqlParameter() 
+                SqlParameter paramO = new SqlParameter()
                 {
                     ParameterName = "@Orientation",
-                    Value=O
-               
+                    Value = O
+
                 };
                 cmd2.Parameters.Add(paramO);
                 con.Open();
@@ -257,6 +257,122 @@ namespace SearchBarwithMasterPage
                 con.Close();
 
                 lblMessage.Text = "Orientation has changed";
+            }
+        }
+
+        protected void btnUpdateType_Click(object sender, EventArgs e)
+        {
+            String Type = "";
+            String username = User.Identity.GetUserName();
+            if (ShortT.Checked)
+            {
+                Type = "Short Term";
+            }
+
+            if (LongT.Checked)
+            {
+
+                Type = "Long Term";
+            }
+
+            if (Friends.Checked)
+            {
+                Type = "Friends";
+
+            }
+            int ID = 0;
+            string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                SqlCommand cmd = new SqlCommand("spGetProfileByName", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramUser = new SqlParameter()
+                {
+                    ParameterName = "@Username",
+                    Value = username
+                };
+                cmd.Parameters.Add(paramUser);
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    ID = Convert.ToInt32(rdr["ID"]);
+                }
+                con.Close();
+
+                SqlCommand cmd2 = new SqlCommand("spUpdateType", con);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramID = new SqlParameter()
+                {
+
+                    ParameterName = "@ID",
+                    Value = ID
+                };
+                cmd2.Parameters.Add(paramID);
+                SqlParameter paramType = new SqlParameter()
+                {
+                    ParameterName = "@Type",
+                    Value = Type
+                };
+                cmd2.Parameters.Add(paramType);
+                con.Open();
+                cmd2.ExecuteNonQuery();
+                con.Close();
+                lblMessage.Text = "Type has changed";
+
+            }
+        }
+
+        protected void btnUpdateImage_Click(object sender, EventArgs e)
+        {
+            HttpPostedFile postedFile = ImageSearch.PostedFile;
+            string fileName = Path.GetFileName(postedFile.FileName);
+            string fileExtension = Path.GetExtension(fileName);
+            String username = User.Identity.GetUserName();
+
+            int ID = 0;
+            string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                SqlCommand cmd = new SqlCommand("spGetProfileByName", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramUser = new SqlParameter()
+                {
+                    ParameterName = "@Username",
+                    Value = username
+                };
+                cmd.Parameters.Add(paramUser);
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    ID = Convert.ToInt32(rdr["ID"]);
+                }
+                con.Close();
+                Stream stream = postedFile.InputStream;
+                BinaryReader binaryreader = new BinaryReader(stream);
+                byte[] bytes = binaryreader.ReadBytes((int)stream.Length);
+
+                SqlCommand cmd2 = new SqlCommand("spUpdateProfilePic", con);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramId = new SqlParameter()
+                {
+                    ParameterName = "@ID",
+                    Value = ID
+                };
+                cmd2.Parameters.Add(paramId);
+                SqlParameter paramPic = new SqlParameter()
+                {
+                    ParameterName = "@ImageData",
+                    Value = bytes
+                };
+                cmd2.Parameters.Add(paramPic);
+                con.Open();
+                cmd2.ExecuteNonQuery();
+                con.Close();
+                lblMessage.Text = "Profile Picture has been updated";
+
+
             }
         }
     }

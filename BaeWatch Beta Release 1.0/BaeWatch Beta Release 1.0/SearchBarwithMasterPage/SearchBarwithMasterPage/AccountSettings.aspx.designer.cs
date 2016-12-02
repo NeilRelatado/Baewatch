@@ -85,15 +85,6 @@ namespace SearchBarwithMasterPage {
         protected global::System.Web.UI.WebControls.Button btnUpdateGender;
         
         /// <summary>
-        /// lblOrientation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOrientation;
-        
-        /// <summary>
         /// Strait control.
         /// </summary>
         /// <remarks>
@@ -130,15 +121,6 @@ namespace SearchBarwithMasterPage {
         protected global::System.Web.UI.WebControls.Button btnOrientation;
         
         /// <summary>
-        /// lblType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblType;
-        
-        /// <summary>
         /// LongT control.
         /// </summary>
         /// <remarks>
@@ -173,15 +155,6 @@ namespace SearchBarwithMasterPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpdateType;
-        
-        /// <summary>
-        /// lblImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblImage;
         
         /// <summary>
         /// ImageSearch control.
