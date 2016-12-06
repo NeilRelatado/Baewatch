@@ -9,6 +9,8 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Configuration;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 
 namespace SearchBarwithMasterPage
 {
@@ -371,6 +373,67 @@ namespace SearchBarwithMasterPage
                 cmd2.ExecuteNonQuery();
                 con.Close();
                 lblMessage.Text = "Profile Picture has been updated";
+
+
+            }
+        }
+
+        protected void btnUpdatePassword_Click(object sender, EventArgs e)
+        {
+            String username = User.Identity.GetUserName();
+
+            int ID = 0;
+            string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                SqlCommand cmd = new SqlCommand("spGetProfileByName", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramUser = new SqlParameter()
+                {
+                    ParameterName = "@Username",
+                    Value = username
+                };
+                cmd.Parameters.Add(paramUser);
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    ID = Convert.ToInt32(rdr["ID"]);
+                }
+                con.Close();
+
+                SqlCommand cmd2 = new SqlCommand("spUpdatePassword ", con);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramID = new SqlParameter() 
+                {
+                    ParameterName = "@ID",
+                    Value=ID
+                };
+                cmd2.Parameters.Add(paramID);
+                SqlParameter paramPass = new SqlParameter() 
+                {
+
+                    ParameterName = "@Password",
+                    Value=Password.Text
+                
+                };
+                cmd2.Parameters.Add(paramPass);
+                con.Open();
+                cmd2.ExecuteNonQuery();
+                con.Close();
+
+                UserManager<IdentityUser> userManager =
+    new UserManager<IdentityUser>(new UserStore<IdentityUser>());
+                
+
+                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+                string GetIDPass = User.Identity.GetUserId();
+                string PWord= Password.Text;
+                userManager.RemovePassword(User.Identity.GetUserId());
+                userManager.AddPassword(User.Identity.GetUserId(), Password.Text);
+                lblMessage.Text = "Password has Changed";
+
+
 
 
             }

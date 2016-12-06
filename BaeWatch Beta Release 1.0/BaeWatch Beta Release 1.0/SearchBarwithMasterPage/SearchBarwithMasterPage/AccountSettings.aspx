@@ -8,7 +8,7 @@
             width: 309px;
         }
         .auto-style3 {
-            width: 272px;
+            width: 223px;
         }
         </style>
 </asp:Content>
@@ -69,6 +69,15 @@
             </td>
             <td class="auto-style2">
                 <asp:button ID="btnUpdateType" runat="server" text="Update" OnClick="btnUpdateType_Click" />
+            </td>
+        </tr>
+         <tr>
+            <td><b>Password</b></td>
+            <td class="auto-style3">
+                 <asp:textBox runat="server" ID="Password" TextMode="Password" Width="509px" />
+            </td>
+            <td class="auto-style2">
+                <asp:button ID="btnUpdatePassword" runat="server" text="Update" OnClick="btnUpdatePassword_Click"  />
             </td>
         </tr>
         <tr>

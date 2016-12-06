@@ -325,6 +325,7 @@
     <Compile Include="straight.aspx.designer.cs">
       <DependentUpon>straight.aspx</DependentUpon>
     </Compile>
+    <Compile Include="userManager.cs" />
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
