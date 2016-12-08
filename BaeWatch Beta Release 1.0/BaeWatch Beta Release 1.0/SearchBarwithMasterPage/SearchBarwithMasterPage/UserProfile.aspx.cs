@@ -152,6 +152,7 @@ namespace SearchBarwithMasterPage
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //Get Name and ID of profile
             string username="";
             string userID = Request.QueryString["ID"];
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
@@ -212,6 +213,90 @@ conn.Open();
                 lblMessage.Text = "Added to Friends List";
             
             }
+        }
+
+        protected void btnWink_Click(object sender, EventArgs e)
+        {
+             string username="";
+            string userID = Request.QueryString["ID"];
+            string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+
+                SqlCommand cmd = new SqlCommand("spGetUserID", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter param = new SqlParameter("@ID", userID);
+                cmd.Parameters.Add(param);
+                conn.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    username = rdr["Username"].ToString();
+                }
+                conn.Close();
+                SqlCommand cmd2 = new SqlCommand("spWink", conn);
+                cmd2.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paramReceiver = new SqlParameter() 
+                {
+                    ParameterName = "@Receiver",
+                    Value=username
+                };
+                cmd2.Parameters.Add(paramReceiver);
+
+                SqlParameter paramReceiverID = new SqlParameter() 
+                {
+                    ParameterName = "@RecieverId",
+                    Value=userID
+                };
+                cmd2.Parameters.Add(paramReceiverID);
+                string yourusername = User.Identity.GetUserName();
+                int ID = 0;
+
+                SqlCommand cmd3 = new SqlCommand("spGetProfileByName", conn);
+                cmd3.CommandType = CommandType.StoredProcedure;
+                SqlParameter paramUser = new SqlParameter()
+                {
+                    ParameterName = "@Username",
+                    Value = yourusername
+                };
+                cmd3.Parameters.Add(paramUser);
+                conn.Open();
+                SqlDataReader rdr2 = cmd3.ExecuteReader();
+                while (rdr2.Read())
+                {
+                    ID = Convert.ToInt32(rdr2["ID"]);
+                }
+                conn.Close();
+                SqlParameter paramSender = new SqlParameter() 
+                {
+                    ParameterName = "@Sender",
+                    Value=yourusername
+                };
+                cmd2.Parameters.Add(paramSender);
+                SqlParameter paramSenderID = new SqlParameter() 
+                {
+
+                    ParameterName = "@SenderId",
+                    Value=ID
+               
+                };
+                SqlParameter paramNewID = new SqlParameter()
+                {
+
+                    ParameterName = "@NewID",
+                    Value = -1,
+                    Direction = ParameterDirection.Output
+                };
+                cmd2.Parameters.Add(paramNewID);
+                cmd2.Parameters.Add(paramSenderID);
+                conn.Open();
+                cmd2.ExecuteNonQuery();
+                conn.Close();
+                lblMessage.Visible = true;
+                lblMessage.Text = "You've sent a wink ;)";
+            }
+
         }
     }
 }

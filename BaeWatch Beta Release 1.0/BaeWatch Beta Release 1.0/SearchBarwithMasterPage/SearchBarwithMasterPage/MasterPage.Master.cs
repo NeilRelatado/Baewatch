@@ -107,5 +107,11 @@ namespace SearchBarwithMasterPage
             Response.Redirect("~/AccountSettings.aspx");
         }
 
+        protected void btnWinks_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Winks.aspx");
+            
+        }
+
     }
 }

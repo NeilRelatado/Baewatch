@@ -30,6 +30,7 @@
 
         <asp:Button ID="btnYourProfile" runat="server" Text="Your Profile" OnClick="btnYourProfile_Click" />
     <asp:Button ID="btnSettings" runat="server" Text="AccountSettings" OnClick="btnSettings_Click" />
+    <asp:Button ID="btnWinks" runat="server" Text="Winks" OnClick="btnWinks_Click" />
 </asp:Panel>
             
   

@@ -82,6 +82,8 @@
  <asp:Button ID="btnAddFriends" runat="server" OnClick="Button1_Click" Text="Add to friends list " />
         <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
         <br />
+    <asp:Button ID="btnWink" runat="server" Text="Wink at user" Width="159px" OnClick="btnWink_Click" />
+        <br />
        
 
         <asp:textbox runat="server" Height="59px" Width="601px" ID="txrComments"></asp:textbox>
