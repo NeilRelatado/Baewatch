@@ -43,10 +43,7 @@ namespace SearchBarwithMasterPage
             get 
             {
                 return this.txtSearch.Text;
-            }
-        
-        
-        
+            }    
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
@@ -105,6 +102,12 @@ namespace SearchBarwithMasterPage
         protected void btnSettings_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/AccountSettings.aspx");
+        }
+
+        protected void btnWinks_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Winks.aspx");
+            
         }
 
     }

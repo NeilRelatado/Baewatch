@@ -49,13 +49,13 @@ namespace SearchBarwithMasterPage {
         protected global::System.Web.UI.WebControls.Label lblDesc;
         
         /// <summary>
-        /// lblInterest control.
+        /// lblIntest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInterest;
+        protected global::System.Web.UI.WebControls.Label lblIntest;
         
         /// <summary>
         /// lblGender control.
@@ -101,6 +101,15 @@ namespace SearchBarwithMasterPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMessage;
+        
+        /// <summary>
+        /// btnWink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnWink;
         
         /// <summary>
         /// txrComments control.

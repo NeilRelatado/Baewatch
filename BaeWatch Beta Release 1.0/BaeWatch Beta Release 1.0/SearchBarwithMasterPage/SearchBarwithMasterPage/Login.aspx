@@ -6,6 +6,7 @@
 
 <head runat="server">
     <title>BaeWatch Beta (Release 1.0)</title>
+    <meta name="description" content="Making Dating and Networking Seamless and Effortless :)" />
 </head>
 
 <body>
