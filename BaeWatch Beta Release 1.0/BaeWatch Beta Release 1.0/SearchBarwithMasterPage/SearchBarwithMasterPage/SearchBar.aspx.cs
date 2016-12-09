@@ -12,10 +12,6 @@ namespace SearchBarwithMasterPage
 {
     public partial class SearchBar : System.Web.UI.Page
     {
-
-         
-
-
         protected void Page_Init(object sender, EventArgs e)
         {
             Master.SearchButton.Click +=new EventHandler(SearchButton_Click);
@@ -45,8 +41,6 @@ namespace SearchBarwithMasterPage
 
         private void GetData(string searchTerm)
         {
-
-          
            string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
            using(SqlConnection con = new SqlConnection(cs))
            {
@@ -57,10 +51,8 @@ namespace SearchBarwithMasterPage
                cmd.Parameters.Add(searchParameter);
                con.Open();
                GridView1.DataSource = cmd.ExecuteReader();
-               GridView1.DataBind(); 
-
-               
-           }
+               GridView1.DataBind();
+            }
         }
     }
 }

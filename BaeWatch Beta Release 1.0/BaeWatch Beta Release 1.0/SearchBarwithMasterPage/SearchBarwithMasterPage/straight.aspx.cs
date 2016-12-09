@@ -25,16 +25,11 @@ namespace SearchBarwithMasterPage
 
         }
 
-
-
-
         private void GetData(string Orientation)
         {
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-
-
                 SqlCommand cmd = new SqlCommand("spGetOrietation", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 

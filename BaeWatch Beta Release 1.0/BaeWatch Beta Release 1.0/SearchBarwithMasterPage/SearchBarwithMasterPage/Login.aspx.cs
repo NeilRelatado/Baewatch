@@ -45,7 +45,7 @@ namespace SearchBarwithMasterPage
             }
             else
             {
-                StatusText.Text = "Invalid username or password.";
+                StatusText.Text = "Invalid Username or Password";
                 LoginStatus.Visible = true;
             }
         }

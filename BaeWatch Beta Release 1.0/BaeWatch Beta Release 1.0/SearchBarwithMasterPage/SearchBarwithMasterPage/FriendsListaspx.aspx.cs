@@ -18,14 +18,11 @@ namespace SearchBarwithMasterPage
             {
                 string name = User.Identity.GetUserName();
                 GetData(name);
-
             }
         }
 
         private void GetData(string name)
         {
-
-
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
@@ -39,8 +36,6 @@ namespace SearchBarwithMasterPage
                 con.Open();
                 GridView1.DataSource = cmd.ExecuteReader();
                 GridView1.DataBind();
-
-
             }
         }
     }

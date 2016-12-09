@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <form id="form1" runat="server">
     <div class="container">
-        <h2>Welcome to</h2>
-        <!--<asp:label ID="Label1" runat="server" Text="Greetings and Welcome to BaeWatch"></asp:label>-->
-        <br />
-        <img alt="BaeWatch Official Logo" src="/images/logo.png" height="128" width:"128" />
-        <br />
-        <br />
-        <asp:button ID="btnSignIn" runat="server" Text="Sign In" OnClick="btnSignIn_Click" />
-        <asp:button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
+        <form id="form1" runat="server">
+            <fieldset>
+                <img alt="BaeWatch Official Logo" src="/images/logo.gif" />
+            </fieldset>
+            <fieldset>
+                <asp:button ID="Button1" CssClass="button" runat="server" Text="Sign In" OnClick="btnSignIn_Click" />
+                <asp:button ID="Button3" CssClass="button" runat="server" Text="Register" OnClick="btnRegister_Click" />
+            </fieldset>
+            <p class="copyright">&copy; Copyright 2016 <a href="StartScreen.aspx" target="_blank" title="BaeWatch">BaeWatch</a></p>
+        </form>
     </div>
-    </form>
 </body>
 </html>

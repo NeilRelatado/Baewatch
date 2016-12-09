@@ -13,11 +13,6 @@ using Microsoft.AspNet.Identity;
 namespace SearchBarwithMasterPage
 {
     public partial class UserProfile : System.Web.UI.Page
-
-
-
-
-
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -56,12 +51,6 @@ namespace SearchBarwithMasterPage
                     };
                     cmd3.Parameters.Add(PID);
 
-
-
-
-
-
-
                     SqlCommand cmd = new SqlCommand("spGetUserID", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     SqlParameter param = new SqlParameter("@ID",userID);
@@ -70,34 +59,28 @@ namespace SearchBarwithMasterPage
                     gridview1.DataSource = cmd3.ExecuteReader();
                     gridview1.DataBind();
                     conn.Close();
-                    conn.Open();
+                    conn.Open(); 
                     
-                    
-                    
-                   using( SqlDataReader rdr = cmd.ExecuteReader())
-                   {
+                    using( SqlDataReader rdr = cmd.ExecuteReader())
+                    {
                        while (rdr.Read())
                        {
                            lblID.Text = rdr["ID"].ToString();
                            lblUsername.Text = rdr["Username"].ToString();
                            lblDesc.Text = rdr["Description"].ToString();
-                           lblIntest.Text = rdr["Intrests"].ToString();
+                           lblInterest.Text = rdr["Intrests"].ToString();
                            lblGender.Text = rdr["Gender"].ToString();
                            lblO.Text = rdr["Orientation"].ToString();
                            lblType.Text = rdr["Type"].ToString();
                        
                        }
-
-
-                   }
+                    }
 
                  byte[] bytes= ( byte[])cmd2.ExecuteScalar();
                  string strBase64 = Convert.ToBase64String(bytes);
                  ProfilePic.ImageUrl = "data:Image/png;base64,"+strBase64;
-                    conn.Close();
-
+                 conn.Close();
                 }
-
             }
         }
        
@@ -137,11 +120,7 @@ namespace SearchBarwithMasterPage
                  cmd.Parameters.Add(paramNewID);
                  con.Open();
                  cmd.ExecuteNonQuery();
-                 con.Close();
-
-            
-             
-             
+                 con.Close();  
              }
         }
 
@@ -201,16 +180,16 @@ namespace SearchBarwithMasterPage
                     Value = -1,
                     Direction = ParameterDirection.Output
                 };
-conn.Close();
-conn.Open();
+
+                conn.Close();
+                conn.Open();
                 cmd.Parameters.Add(paramNewID);
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 
 
                 lblMessage.Visible = true;
-                lblMessage.Text = "Added to Friends List";
-            
+                lblMessage.Text = "Added to Friends List";            
             }
         }
     }

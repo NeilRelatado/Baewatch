@@ -29,8 +29,6 @@ namespace SearchBarwithMasterPage
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-
-
                 SqlCommand cmd = new SqlCommand("spGetGender", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -43,9 +41,6 @@ namespace SearchBarwithMasterPage
                 con.Close();
 
             }
-
-
-
         }
     }
 }

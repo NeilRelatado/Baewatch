@@ -34,8 +34,6 @@ namespace SearchBarwithMasterPage
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-
-
                 SqlCommand cmd = new SqlCommand("spGetType", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -46,10 +44,7 @@ namespace SearchBarwithMasterPage
                 HomepageGridView.DataSource = cmd.ExecuteReader();
                 HomepageGridView.DataBind();
                 con.Close();
-
             }
-
-
         }
     }
 }

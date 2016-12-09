@@ -26,7 +26,6 @@ namespace SearchBarwithMasterPage
                 HomepageGridView.DataSource = rdr;
                 HomepageGridView.DataBind();
                 conn.Close();
-
             }
         }
 
@@ -49,9 +48,6 @@ namespace SearchBarwithMasterPage
                 conn.Close();
 
             }
-
-
-
         }
 
         protected void btnMale_Click(object sender, EventArgs e)
@@ -97,10 +93,6 @@ namespace SearchBarwithMasterPage
         protected void Friends_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Friends.aspx");
-        }
-
-       
-
-       
+        }  
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AccountSettings.aspx.cs" Inherits="SearchBarwithMasterPage.AccountSettings" %>
+﻿<%@ Page Title="BaeWatch Beta (Release 1.0)" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AccountSettings.aspx.cs" Inherits="SearchBarwithMasterPage.AccountSettings" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -27,9 +27,9 @@
             
         </tr>
         <tr>
-            <td class="auto-style1"><b>Intrests: </b></td>
+            <td class="auto-style1"><b>Interests:</b></td>
             <td class="auto-style3">
-                <asp:textbox  ID="txtIntrests" runat="server" Width="509px"></asp:textbox>
+                <asp:textbox  ID="txtInterests" runat="server" Width="509px"></asp:textbox>
             </td>
             <td>
                 <asp:button ID="btnUpdateInt" runat="server" text="Update" OnClick="btnUpdateInt_Click" />
@@ -48,12 +48,11 @@
             </td>
             
         </tr>
-
         <tr>
-            <td><b>Orientation</b></td>
+            <td><b>Sexual Orientation</b></td>
             <td class="auto-style3">
                 <asp:radiobutton ID="Strait" GroupName="Orientation" Text="Straight" runat="server"></asp:radiobutton>
-                <asp:radiobutton ID="Gay" Text="Gay" GroupName="Orientation"  runat="server"></asp:radiobutton>
+                <asp:radiobutton ID="Gay" GroupName="Orientation" Text="Gay" runat="server"></asp:radiobutton>
                 <asp:radiobutton ID="OtherOrientation" GroupName="Orientation" Text="Other" runat="server"></asp:radiobutton>
             </td>
             <td class="auto-style2">
@@ -61,11 +60,11 @@
             </td>
         </tr>
         <tr>
-            <td><b>Type</b></td>
+            <td><b>Relationship Type</b></td>
             <td class="auto-style3">
                 <asp:radiobutton ID="LongT" Text="Long Term" runat="server"></asp:radiobutton>
                 <asp:radiobutton ID="ShortT" Text="Short Term" runat="server"></asp:radiobutton>
-                <asp:radiobutton ID="Friends" Text="Just Friends" runat="server"></asp:radiobutton>
+                <asp:radiobutton ID="Friends" Text="Friendship" runat="server"></asp:radiobutton>
             </td>
             <td class="auto-style2">
                 <asp:button ID="btnUpdateType" runat="server" text="Update" OnClick="btnUpdateType_Click" />
@@ -89,22 +88,8 @@
             
         </tr>       
     </table>
+
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
     <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <asp:Button ID="btnDelete" runat="server" Text="Delete your account" OnClick="btnDelete_Click" />
 </asp:Content>

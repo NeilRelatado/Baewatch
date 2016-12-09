@@ -23,15 +23,13 @@ namespace SearchBarwithMasterPage
         protected void btn_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Login.aspx");
-
-
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             String Username = txtUserName.Text;
             String Description = txtDescription.Text;
-            String Intrests = txtIntrests.Text;
+            String Interests = txtInterests.Text;
             String Password = txtPassword.Text;
             String Gender = "";
             String O = "";
@@ -95,7 +93,7 @@ namespace SearchBarwithMasterPage
 
             if (fileExtension.ToLower() == ".jpg" || fileExtension.ToLower() == ".bmp" ||
                 fileExtension.ToLower() == ".png" || fileExtension.ToLower() == ".gif" ||
-                Username != null || Description != null || Intrests != null)
+                Username != null || Description != null || Interests != null)
             {
                 var userStore = new UserStore<IdentityUser>();
                 var manager = new UserManager<IdentityUser>(userStore);
@@ -146,7 +144,7 @@ namespace SearchBarwithMasterPage
                         {
 
                             ParameterName = "@Intrests",
-                            Value = Intrests
+                            Value = Interests
                         };
                         cmd.Parameters.Add(paramItrest);
 
@@ -203,18 +201,11 @@ namespace SearchBarwithMasterPage
 
                     authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
                     // Response.Redirect("~/Login.aspx");
-
-
-
-
-
                 }
                 else
                 {
                     lblMessage.Text = result.Errors.FirstOrDefault();
                 }
-
-
             }
 
             else
@@ -224,12 +215,22 @@ namespace SearchBarwithMasterPage
                 lblMessage.Text = "Failed. Please try again";
             }
 
+        }
+        /*
+        protected void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
 
-
-
-
+            if (chkShowPassword.Checked)
+            {
+                txtPassword.TextMode = TextBoxMode.SingleLine;
+            }
+            else
+            {
+                txtPassword.TextMode = TextBoxMode.Password;
+            }
 
         }
+        */
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {

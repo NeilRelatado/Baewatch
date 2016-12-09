@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="SearchBarwithMasterPage.UserProfile" %>
+﻿<%@ Page Title="BaeWatch Beta (Release 1.0)" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="SearchBarwithMasterPage.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -7,83 +7,73 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-
-
-
     <asp:image ID="ProfilePic" Height="500px" Width="500px" runat="server"></asp:image>
-    
-    
-    
     <div style="font-family: Arial">
-<table border="1" style="background: LightGoldenrodYellow">
-<div style="font-family: Arial">
-<table border="1" style="background: LightGoldenrodYellow">
-    <tr>
-        <td>
-            <b>ID</b>
-        </td>
-        <td class="auto-style1">
-            <asp:Label ID="lblID" runat="server"></asp:Label>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            <b>Username</b>
-        </td>
-        <td class="auto-style1">
-            <asp:Label ID="lblUsername" runat="server"></asp:Label>
-        </td>
-    </tr>
-          
-    <tr>
-        <td>
-            <b>Description</b>
-        </td>
-        <td class="auto-style1">
-            <asp:Label ID="lblDesc" runat="server"></asp:Label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>Intrests</b>
-        </td>
-        <td class="auto-style1">
-             <asp:Label ID="lblIntest" runat="server"></asp:Label>
-        </td>
-    </tr>
-    <tr>
-        <td>
- <b>Gender</b>
+        <table border="1" style="background: LightGoldenrodYellow">
+    <div style="font-family: Arial">
+        <table border="1" style="background: LightGoldenrodYellow">
+            <tr>
+                <td>
+                    <b>ID</b>
+                </td>
+                <td class="auto-style1">
+                    <asp:Label ID="lblID" runat="server"></asp:Label>
+                </td>
+            </tr>
+            tr>
+                <td>
+                    <b>Username</b>
+                </td>
+                <td class="auto-style1">
+                    <asp:Label ID="lblUsername" runat="server"></asp:Label>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <b>Description</b>
+                </td>
+                <td class="auto-style1">
+                    <asp:Label ID="lblDesc" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Interests/Hobbies</b>
+                </td>
+                <td class="auto-style1">
+                    <asp:Label ID="lblInterest" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Gender</b>
+                </td>    
+                <td class="auto-style1">
+                    <asp:Label ID="lblGender" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Sexual Orientation</b>
+                </td>
+                <td>
+                    <asp:label runat="server" ID="lblO"></asp:label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Relationship Type</b>
+                </td>
+                <td>
+                    <asp:label runat="server" ID="lblType"></asp:label>
+                </td>
+            </tr>
+        </table>
+    </div></table>
 
-        </td>
-        
- <td class="auto-style1">
-        <asp:Label ID="lblGender" runat="server"></asp:Label>
-   </td>
-    </tr>
-    <tr>
-        <td>
-            <b>Orientation</b>
-        </td>
-        <td>
-            <asp:label runat="server" ID="lblO"></asp:label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>Type</b>
-        </td>
-        <td>
-            <asp:label runat="server" ID="lblType"></asp:label>
-        </td>
-   </tr>
-</table>
-</div></table>
- <asp:Button ID="btnAddFriends" runat="server" OnClick="Button1_Click" Text="Add to friends list " />
-        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
-        <br />
-       
-
+    <asp:Button ID="btnAddFriends" runat="server" OnClick="Button1_Click" Text="Add to friends list " />
+    <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+    <br />
         <asp:textbox runat="server" Height="59px" Width="601px" ID="txrComments"></asp:textbox>
         <asp:button ID="btnPost" runat="server" text="Post" OnClick="btnPost_Click" />
 

@@ -60,30 +60,18 @@ namespace SearchBarwithMasterPage
                  }
                  string UserID = ID.ToString();
                  con.Close();
- UserManager<IdentityUser> userManager =
-    new UserManager<IdentityUser>(new UserStore<IdentityUser>());
+
+                 UserManager<IdentityUser> userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>());
                  var user = userManager.Find(username, Password);
                  
                  var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
                  string GetID = User.Identity.GetUserId();
-
-
-
                  
                  userManager.RemovePasswordAsync(GetID);
                  authenticationManager.SignOut();
                  
-  
-                 
-                 Response.Redirect("~/StartScreen.aspx");
-             
-             
-             
-             
+                 Response.Redirect("~/StartScreen.aspx"); 
              }
-
-        }
-
-        
+        }       
     }
 }

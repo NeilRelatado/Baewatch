@@ -68,16 +68,14 @@ namespace SearchBarwithMasterPage
                 con.Open();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                lblMessage.Text = "Description has been changed";
+                lblMessage.Text = "Your description has been changed";
             }
-
-
         }
 
         protected void btnUpdateInt_Click(object sender, EventArgs e)
         {
             string username = User.Identity.GetUserName();
-            string Intrests = txtIntrests.Text;
+            string Interests = txtInterests.Text;
             int ID = 0;
             string cs = ConfigurationManager.ConnectionStrings["BaewatchConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
@@ -111,17 +109,14 @@ namespace SearchBarwithMasterPage
                 {
 
                     ParameterName = "@Intrest",
-                    Value = Intrests
+                    Value = Interests
 
                 };
                 cmd2.Parameters.Add(paramInt);
                 con.Open();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                lblMessage.Text = "Intrests has been changed";
-
-
-
+                lblMessage.Text = "Your interests has been changed";
             }
         }
 
@@ -190,14 +185,8 @@ namespace SearchBarwithMasterPage
                 con.Open();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                lblMessage.Text = "Gender has been changed";
-
-
-
+                lblMessage.Text = "Your gender has been changed";
             }
-
-
-
         }
 
         protected void btnOrientation_Click(object sender, EventArgs e)
@@ -258,7 +247,7 @@ namespace SearchBarwithMasterPage
                 cmd2.ExecuteNonQuery();
                 con.Close();
 
-                lblMessage.Text = "Orientation has changed";
+                lblMessage.Text = "Your sexual orientation has been changed";
             }
         }
 
@@ -320,8 +309,7 @@ namespace SearchBarwithMasterPage
                 con.Open();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                lblMessage.Text = "Type has changed";
-
+                lblMessage.Text = "Your relationship type has been updated";
             }
         }
 
@@ -372,9 +360,7 @@ namespace SearchBarwithMasterPage
                 con.Open();
                 cmd2.ExecuteNonQuery();
                 con.Close();
-                lblMessage.Text = "Profile Picture has been updated";
-
-
+                lblMessage.Text = "Your profile picture has been updated";
             }
         }
 
@@ -422,8 +408,7 @@ namespace SearchBarwithMasterPage
                 cmd2.ExecuteNonQuery();
                 con.Close();
 
-                UserManager<IdentityUser> userManager =
-    new UserManager<IdentityUser>(new UserStore<IdentityUser>());
+                UserManager<IdentityUser> userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>());
                 
 
                 var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
@@ -431,11 +416,7 @@ namespace SearchBarwithMasterPage
                 string PWord= Password.Text;
                 userManager.RemovePassword(User.Identity.GetUserId());
                 userManager.AddPassword(User.Identity.GetUserId(), Password.Text);
-                lblMessage.Text = "Password has Changed";
-
-
-
-
+                lblMessage.Text = "Your password was successfully changed";
             }
         }
     }

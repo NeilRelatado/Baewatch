@@ -19,7 +19,7 @@ namespace SearchBarwithMasterPage
         //Male
         protected void Page_Load(object sender, EventArgs e)
         {
-            string Male="Male";
+            string Male = "Male";
             GetData(Male);
 
         }
@@ -35,23 +35,19 @@ namespace SearchBarwithMasterPage
             using (SqlConnection con = new SqlConnection(cs))
             {
 
-                
+
                 SqlCommand cmd = new SqlCommand("spGetGender", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter searchParameter = new SqlParameter("@Gender", Gender);
                 cmd.Parameters.Add(searchParameter);
                 con.Open();
-                
+
                 HomepageGridView.DataSource = cmd.ExecuteReader();
                 HomepageGridView.DataBind();
                 con.Close();
 
             }
-
-
-
-            }//
         }
-
     }
+}

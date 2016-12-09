@@ -76,22 +76,22 @@ namespace SearchBarwithMasterPage {
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
         
         /// <summary>
-        /// lblIntrests control.
+        /// lblInterests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIntrests;
+        protected global::System.Web.UI.WebControls.Label lblInterests;
         
         /// <summary>
-        /// txtIntrests control.
+        /// txtInterests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIntrests;
+        protected global::System.Web.UI.WebControls.TextBox txtInterests;
         
         /// <summary>
         /// lblGender control.

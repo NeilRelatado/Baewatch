@@ -24,9 +24,7 @@ namespace SearchBarwithMasterPage
         }
         protected void btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Login.aspx");
-        
-        
+            Response.Redirect("~/Login.aspx"); 
         }
 
         protected void btnRegister_Click(object sender, EventArgs e) 
@@ -205,10 +203,6 @@ namespace SearchBarwithMasterPage
                   authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
                  // Response.Redirect("~/Login.aspx");
 
-
-
-
-
               }
               else
               {
@@ -223,24 +217,12 @@ namespace SearchBarwithMasterPage
                 lblMessage.Visible = true;
                 lblMessage.ForeColor = System.Drawing.Color.Red;
                 lblMessage.Text = "Failed. Please try again";
-            }
- 
-            
-             
-
-             
-            
+            }      
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Login.aspx");
-        }
-
-       
-        
+        }    
     }
- 
-    
-
 }
