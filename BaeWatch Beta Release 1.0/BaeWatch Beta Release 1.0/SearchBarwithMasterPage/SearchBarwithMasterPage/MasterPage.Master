@@ -26,27 +26,3 @@
 <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
 </form>
 </html>
-
-
-
-
-
-    
-
-
-
-        
-
-
-
-
-    
- 
-       
-        
-    
-    
-
-
- 
-

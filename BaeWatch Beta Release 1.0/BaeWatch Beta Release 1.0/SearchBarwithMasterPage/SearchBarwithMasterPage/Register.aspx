@@ -16,7 +16,7 @@
             <td><asp:TextBox ID="txtDescription" runat="server" Width="476px"></asp:TextBox></td>
         </tr>
         <tr>
-            <td><asp:Label ID="lblIntrests" runat="server" Text="Intrests "></asp:Label></td>
+            <td><asp:Label ID="lblIntrests" runat="server" Text="Interests "></asp:Label></td>
             <td><asp:TextBox ID="txtIntrests" runat="server" Width="476px"></asp:TextBox></td>
         </tr>
         <tr>

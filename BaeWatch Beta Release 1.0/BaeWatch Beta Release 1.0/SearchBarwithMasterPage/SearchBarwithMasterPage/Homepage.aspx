@@ -10,24 +10,24 @@
             <td>
                 <asp:button  ID="btnMale" runat="server" text="Male" OnClick="btnMale_Click" EnableTheming="True" />
                 <asp:Button ID="btnFemale" runat="server" Text="Female" OnClick="btnFemale_Click" />
-            </td>        
+            </td>
         </tr>
         <tr>
             <td><b>Sexual Orientation : </b></td>
             <td><asp:Button ID="Btnstraight" runat="server" Text="Straight" OnClick="Btnstraight_Click" />
                 <asp:Button ID="BtnGay" runat="server" Text="Gay" OnClick="BtnGay_Click" style="width: 38px" />
-                <asp:Button ID="BtnOther" runat="server" Text="Other" OnClick="BtnOther_Click" /></td> 
+                <asp:Button ID="BtnOther" runat="server" Text="Other" OnClick="BtnOther_Click" />
+            </td>
         </tr>
         <tr>
             <td><b>Relationship Type : </b></td>
             <td><asp:Button ID="Long" runat="server" Text="Long Term" OnClick="Long_Click"  />
                 <asp:Button ID="Short" runat="server" Text="Short Term" OnClick="Short_Click" Width="83px" />
-                <asp:Button ID="Friends" runat="server" Text="Friendship" OnClick="Friends_Click" /></td>  
+                <asp:Button ID="Friends" runat="server" Text="Friendship" OnClick="Friends_Click" />
+            </td>
         </tr>
     </table>
-
     <br />
-
     <asp:Label ID="StatusMessage" runat="server" Text=""></asp:Label>
     <asp:GridView ID="HomepageGridView" runat="server" AutoGenerateColumns="false">
         <Columns>
@@ -38,13 +38,13 @@
             </asp:TemplateField>
                 <asp:BoundField DataField ="Username" HeaderText="Username" />
                 <asp:BoundField DataField ="Description" HeaderText="Description" />
-                <asp:BoundField DataField ="Intrests" HeaderText="Interests" />
+                <asp:BoundField DataField ="Intrests" HeaderText="Interests/Hobbies" />
                 <asp:BoundField DataField="Gender" HeaderText="Gender" />
                 <asp:TemplateField HeaderText="Image">
                     <ItemTemplate>
                         <asp:Image ID="Image1" runat="server" Height="100px" Width="100px" ImageUrl='<%#"data:Image/png;base64," + Convert.ToBase64String((byte[])Eval("ImageData")) %>' />
                     </ItemTemplate>
-                </asp:TemplateField>      
+                </asp:TemplateField>
         </Columns>
     </asp:GridView>
 </asp:Content>

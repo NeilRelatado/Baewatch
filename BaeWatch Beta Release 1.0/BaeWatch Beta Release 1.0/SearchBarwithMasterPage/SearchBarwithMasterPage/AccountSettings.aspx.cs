@@ -26,6 +26,11 @@ namespace SearchBarwithMasterPage
             Response.Redirect("~/DeleteConfirm.aspx");
         }
 
+        protected void btnHomePage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Homepage.aspx");
+        }
+
         protected void btnUpdateDesc_Click(object sender, EventArgs e)
         {
             string username = User.Identity.GetUserName();

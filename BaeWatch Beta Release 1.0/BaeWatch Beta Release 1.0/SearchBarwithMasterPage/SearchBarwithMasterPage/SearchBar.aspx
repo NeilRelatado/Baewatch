@@ -2,8 +2,7 @@
 <%@ MasterType VirtualPath="~/MasterPage.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-    <p>
-        &nbsp;</p>
+    <p>&nbsp;</p>
     <p>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
         <Columns>

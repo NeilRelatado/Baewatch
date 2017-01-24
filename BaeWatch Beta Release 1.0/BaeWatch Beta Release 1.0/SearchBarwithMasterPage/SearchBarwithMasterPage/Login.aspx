@@ -15,7 +15,6 @@
             <h4 style="font-size: large">Log In</h4>
             <hr />
             <br />
-
             <asp:placeholder runat="server" ID="LoginForm" Visible="false">
                 <div style="margin-bottom: 10px">
                    <asp:label runat="server" AssociatedControlID="UserName">Username</asp:label>
@@ -47,7 +46,7 @@
                 <span style="color:red"><asp:Literal runat="server" ID="StatusText" /></span>
             </p>
             </asp:placeholder>
-         <p class="copyright">&copy; Copyright 2016 <a href="StartScreen.aspx" target="_blank" title="BaeWatch">BaeWatch</a></p>
+         <p class="copyright">&copy; Copyright 2016 <a href="StartScreen.aspx" target="_self" title="BaeWatch">BaeWatch</a></p>
     </form>
     </div>
 </body>

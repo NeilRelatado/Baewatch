@@ -7,7 +7,6 @@
                 <ItemTemplate>
                     <asp:LinkButton ID="ID" OnClick="LinkButton1_Click" Text='<%#Eval("ID")%>' runat="server">LinkButton</asp:LinkButton>
                 </ItemTemplate>
-
             </asp:TemplateField>
             <asp:BoundField DataField ="Username" HeaderText="Username" />
             <asp:BoundField DataField ="Description" HeaderText="Description" />
@@ -17,7 +16,7 @@
                 <ItemTemplate>
                     <asp:Image ID="Image1" runat="server" Height="100px" Width="100px" ImageUrl='<%#"data:Image/png;base64," + Convert.ToBase64String((byte[])Eval("ImageData")) %>' />
                 </ItemTemplate>
-            </asp:TemplateField>  
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
 </asp:Content>

@@ -93,6 +93,6 @@ namespace SearchBarwithMasterPage
         protected void Friends_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Friends.aspx");
-        }  
+        }
     }
 }

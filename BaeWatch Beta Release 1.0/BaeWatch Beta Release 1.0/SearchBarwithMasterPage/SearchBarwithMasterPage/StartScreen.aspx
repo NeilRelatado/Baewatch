@@ -18,7 +18,7 @@
                 <asp:button ID="Button1" CssClass="button" runat="server" Text="Sign In" OnClick="btnSignIn_Click" />
                 <asp:button ID="Button3" CssClass="button" runat="server" Text="Register" OnClick="btnRegister_Click" />
             </fieldset>
-            <p class="copyright">&copy; Copyright 2016 <a href="StartScreen.aspx" target="_blank" title="BaeWatch">BaeWatch</a></p>
+            <p class="copyright">&copy; Copyright 2016 <a href="StartScreen.aspx" target="_self" title="BaeWatch">BaeWatch</a></p>
         </form>
     </div>
 </body>

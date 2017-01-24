@@ -17,7 +17,7 @@
                 <ItemTemplate>
                     <asp:Image ID="Image1" runat="server" Height="100px" Width="100px" ImageUrl='<%#"data:Image/png;base64," + Convert.ToBase64String((byte[])Eval("ImageData")) %>' />
                 </ItemTemplate>
-            </asp:TemplateField>   
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
 </asp:Content>

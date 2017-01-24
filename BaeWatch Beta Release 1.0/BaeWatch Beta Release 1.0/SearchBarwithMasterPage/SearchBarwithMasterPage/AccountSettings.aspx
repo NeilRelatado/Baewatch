@@ -13,7 +13,6 @@
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-
     <b>Update your Information</b>
     <table style="width: 100%;">
         <tr>
@@ -24,7 +23,6 @@
             <td>
                 <asp:button ID="btnUpdateDesc" runat="server" text="Update" OnClick="btnUpdateDesc_Click" />
             </td>
-            
         </tr>
         <tr>
             <td class="auto-style1"><b>Interests:</b></td>
@@ -38,15 +36,13 @@
         <tr>
             <td class="auto-style1"><b>Gender</b></td>
             <td class="auto-style3">
-                
-                 <asp:radiobutton ID="Male" GroupName="Genders" Text="Male" runat="server"></asp:radiobutton>
+                <asp:radiobutton ID="Male" GroupName="Genders" Text="Male" runat="server"></asp:radiobutton>
                 <asp:radiobutton  ID="Female" GroupName="Genders" Text="Female" runat="server"></asp:radiobutton>
                 <asp:radiobutton  ID="Other" GroupName="Genders" Text="Other" runat="server"></asp:radiobutton>
             </td>
             <td class="auto-style2">
                 <asp:button ID="btnUpdateGender" runat="server" text="Update" OnClick="btnUpdateGender_Click" />
             </td>
-            
         </tr>
         <tr>
             <td><b>Sexual Orientation</b></td>
@@ -85,10 +81,8 @@
             <td class="auto-style2">
                 <asp:button ID="btnUpdateImage" runat="server" text="Update" OnClick="btnUpdateImage_Click" />
             </td>
-            
-        </tr>       
+        </tr>
     </table>
-
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
     <br />
     <asp:Button ID="btnDelete" runat="server" Text="Delete your account" OnClick="btnDelete_Click" />

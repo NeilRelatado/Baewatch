@@ -7,8 +7,8 @@
                 <ItemTemplate>
                     <asp:LinkButton ID="ID" OnClick="LinkButton1_Click" Text='<%#Eval("SenderID")%>' runat="server">LinkButton</asp:LinkButton>
                 </ItemTemplate>
-            </asp:TemplateField> 
-            <asp:BoundField DataField="Sender" HeaderText="Name" />    
+            </asp:TemplateField>
+            <asp:BoundField DataField="Sender" HeaderText="Name" />
         </Columns>
     </asp:GridView>
 </asp:Content>
